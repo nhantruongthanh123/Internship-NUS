@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> World Cup Championship </title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .logo-container img {
+            height: 80px;
+            width: auto;
+            display: block;
+            padding-left: 5vw;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+            flex-wrap: nowrap;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #000;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .navigation a:last-child {
+            background-color: #000000;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 5px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            position: relative;
+            z-index: 0;
+            isolation: isolate;
+            height: 80vh;
+            width: 80vw;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .main-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding-left: 5vw;
+            padding-right: 30vw;
+        }
+
+        .buttons button {
+            position: relative;
+            margin-top: 20px;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .buttons button:first-child {
+            background-color: blue;
+            color: #fff;
+            border: none;
+        }
+
+        .buttons button:last-child {
+            background-color: green;
+            color: #fff;
+            border: none;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80vw;
+            margin: 0 auto;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .flags {
+            display: flex;         
+            align-items: center;   
+            justify-content: center; 
+            gap: 20px;
+        }
+
+        .flags img {
+            height: 50px;
+            width: auto;
+            padding: 10px;
+        }
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .texts h1 {
+            margin: 0;
+        }
+
+        .texts h3 {
+            margin: 0;
+        }
+
+        .times {
+            display: flex;
+            gap: 20px;
+        }
+
+        .ticket {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .ticket button {
+            background-color: green;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="logo.png" alt="World Cup Championship">
+            </div>
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Game</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">Buy ticket</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Welcome to the World Cup Championship!</h1>
+            <p>Experience the thrill of the world's most prestigious football tournament. Join us as we celebrate the passion, skill, and excitement of the beautiful game.</p>
+            <div class="buttons">
+                <button> Watch match </button>
+                <button> Get ticket </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="flags">
+            <img src="bdn.png">
+            <h1> vs </h1>
+            <img src="arg.png">
+        </div>
+        <div class="texts">
+            <h1> World Cup Final 2026 </h1>
+            <h3> Final </h3>
+        </div>
+        <div class="times">
+            <div class="texts">
+                <h1> 31 </h1>
+                <h3> Days </h3>
+            </div>
+            <div class="texts">
+                <h1> 12 </h1>
+                <h3> Hours </h3>
+            </div>
+            <div class="texts">
+                <h1> 30 </h1>
+                <h3> Minutes </h3>
+            </div>
+            <div class="texts">
+                <h1> 36 </h1>
+                <h3> Seconds </h3>
+            </div>
+            <div class="ticket">
+                <button> Buy ticket </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
